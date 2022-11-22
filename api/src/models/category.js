@@ -4,29 +4,19 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define(
-    "tourism",
+    "category",
     {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
       },
       name: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
       },
-      dura: {
+      image: {
         type: DataTypes.STRING,
-      },
-      diff: {
-        type: DataTypes.INTEGER,
-        validate: {
-          is: /^[1-5]/i,
-        },
-      },
-      temp: {
-        type: DataTypes.ENUM("Verano", "Otoño", "Invierno", "Primavera"),
       },
     },
     {

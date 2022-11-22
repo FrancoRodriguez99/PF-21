@@ -30,10 +30,10 @@ In fact forget the logo.
 */
 const server = require("./src/app.js");
 const { conn } = require("./src/db.js");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
+conn.sync({ force: false }).then(() => {
   server.listen(PORT, () => {
     console.log("%s listening at " + PORT); // eslint-disable-line no-console
   });
