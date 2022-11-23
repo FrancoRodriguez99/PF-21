@@ -1,0 +1,4 @@
+#Home_Main_Container {
+  display: flex;
+  justify-content: space-around;
+}

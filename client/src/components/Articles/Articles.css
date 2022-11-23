@@ -1,0 +1,18 @@
+#main_display_articles {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#articles_paginado_container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#specific_pagina_paginado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
