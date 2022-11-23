@@ -1,0 +1,10 @@
+#navBar_general_container {
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  background-color: lightblue;
+}
